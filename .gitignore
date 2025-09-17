@@ -10,7 +10,7 @@ dist/
 build/
 
 # Virtual environment
-venv/
+powerenv/
 .env/
 *.env
 
