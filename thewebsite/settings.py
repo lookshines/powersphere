@@ -120,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 # URL to access static files in templates
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 # Directory to collect all static files when running collectstatic
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
@@ -134,3 +134,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
