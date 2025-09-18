@@ -28,7 +28,7 @@ media/
 *.log
 
 # Static files (collected)
-staticfiles/
+
 
 # Environment files
 .env
