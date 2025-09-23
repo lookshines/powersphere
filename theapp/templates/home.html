@@ -1,0 +1,111 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PowerSphere — 3D Bootstrap Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'css/style1.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="{% static 'images/logo.png' %}" alt="PowerSphere logo">
+      <!--<span class="ms-3 fw-bold text-dark" style="font-size:1.15rem">PowerSphere</span>-->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="stage mb-4" id="stage">
+          <div class="card-3d p-0" id="card" style="padding:0;">
+            <img class="img-fluid" src="{% static 'images/placeholder.jpg' %}" alt="home image">
+            <!--<div class="row g-0">
+              <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
+                <div class="device m-4 d-flex align-items-center justify-content-center">
+                  <div class="text-center">
+                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#0b4f93" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="#0b4f93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <div class="mt-2 fw-semibold" style="color:var(--brand)">Smart Power Management</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <span class="badge-accent">New</span>
+                  <h2 class="mt-3" style="color:var(--brand)">PowerSphere Energy Jacking</h2>
+                  <p class="text-muted">The future of power — engineered today. Simple monitoring, reliable lifts, and smart control for industrial jacks & lifting solutions.</p>
+                  <div class="d-flex gap-2 mt-3">
+                    <a class="btn btn-primary btn-lg" href="#contact">Request Quote</a>
+                    <a class="btn btn-outline-secondary btn-lg" href="#features">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <h1>Why PowerSphere</h3>
+        <h3 class="display-6">Reliable lifting solutions for heavy-duty tasks</h1>
+        <p class="lead text-muted">Inspired by the look & feel of jacking-solutions.com, this template uses Bootstrap and lightweight 3D parallax on the hero card — easy to reuse and customise.</p>
+
+        <div class="row g-3 features">
+          <div class="col-md-6">
+            <div class="feature">
+              <h5>Robust Hardware</h5>
+              <p class="small text-muted mb-0">Built for heavy loads and long life.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature">
+              <h5>Smart Monitoring</h5>
+              <p class="small text-muted mb-0">Real-time metrics, alerts and analytics.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature">
+              <h5>Easy Integration</h5>
+              <p class="small text-muted mb-0">Works with existing control systems.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature">
+              <h5>Support & Service</h5>
+              <p class="small text-muted mb-0">Local engineers and rapid response.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-white border-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="py-3">© <strong>PowerSphere</strong> — The Future of Power</div>
+    <!--<div class="py-3 text-muted small">Built with Bootstrap • 3D hero effect</div>-->
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

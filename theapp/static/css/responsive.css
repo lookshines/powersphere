@@ -1,0 +1,2138 @@
+/* Min width 991px */
+@media only screen and (max-width: 767px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 540px;
+  }
+  .container-fluid.sp-padding {
+    max-width: 540px;
+  }
+  .container-fluid.ht-padding {
+    max-width: 540px;
+  }
+  .container-fluid.left-padding {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-120 {
+    padding-top: 50px;
+  }
+  .pb-120 {
+    padding-bottom: 50px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  /* Section Heading CSS */
+  .section-heading h2 {
+    font-size: 25px;
+  }
+  /* Section Title CSS */
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  /* Sub Title CSS */
+  .sub-title {
+    margin-bottom: 5px;
+  }
+  /* Header Area CSS */
+  .header-area .left-side {
+    gap: 5px;
+    flex-direction: column;
+  }
+  .header-area .left-side li::before {
+    display: none;
+  }
+  .header-area .right-side {
+    text-align: center;
+  }
+  .header-area .right-side li {
+    margin-right: 15px;
+  }
+  .header-area .right-side li .language-selector .form-select {
+    padding: 2px 15px 2px 5px;
+  }
+  .header-area .right-side li::before {
+    display: none;
+  }
+  /* Top Menu Area CSS */
+  .top-menu-area {
+    padding: 20px 0;
+  }
+  .top-menu-area .pe-5 {
+    padding-right: 20px !important;
+  }
+  .top-menu-area .logo {
+    display: none;
+  }
+  .top-menu-area .collapse:not(.show) {
+    display: block;
+  }
+  .top-menu-area .navbar-nav {
+    gap: 10px;
+  }
+  .top-menu-area .navbar-nav .nav-item::before {
+    display: none;
+  }
+  .top-menu-area .navbar-nav.align-items-center {
+    align-items: start !important;
+  }
+  /* Navbar Area CSS */
+  .navbar .navbar-toggler .burger-menu span {
+    background-color: var(--white);
+  }
+  .navbar.style-three {
+    margin-bottom: 0;
+  }
+  .navbar.style-three .container-fluid {
+    padding: 20px 14px;
+  }
+  .navbar.style-three .navbar-toggler .burger-menu span {
+    background-color: var(--dark);
+  }
+  .navbar.style-three .others-options {
+    right: auto;
+    left: 14px;
+  }
+  .navbar .others-options {
+    position: absolute;
+    right: 40px;
+  }
+  .navbar .others-options ul li {
+    margin-right: 15px;
+  }
+  .navbar .others-options ul li .default-btn {
+    display: none;
+  }
+  .navbar .others-options ul li .cart-btn.border-style::before {
+    display: none;
+  }
+  /* Search Modal CSS */
+  .search-modal .btn-close {
+    top: 30px;
+    right: 20px;
+    font-size: 20px;
+  }
+  .search-modal .modal-dialog {
+    max-width: 100%;
+  }
+  /* Main Banner Area CSS */
+  .main-banner-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .main-banner-area .h-shape-2 {
+    display: none;
+  }
+  .main-banner-content h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .main-banner-content .d-block {
+    display: inline-block !important;
+  }
+  .main-banner-content .fs-18 {
+    font-size: 16px;
+  }
+  .main-banner-content p {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .main-banner-content .main-banner-image {
+    right: 0;
+    bottom: 0;
+    position: relative;
+    margin-top: 30px;
+  }
+  .main-banner-content .main-banner-image .circle-arrow {
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    text-align: center;
+  }
+  .main-banner-content .scroll-btn {
+    width: 50px;
+    height: 80px;
+    line-height: 80px;
+  }
+  .circle-arrow i {
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    line-height: 95px;
+  }
+  .circle-arrow .right-up .h-shape-8 {
+    top: -33px;
+    max-width: 70px;
+  }
+  /* Banner Content CSS h-2 */
+  .banner-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .banner-area .social-links {
+    top: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    transform: unset;
+    writing-mode: initial;
+    justify-content: center;
+    bottom: 0;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-next, .banner-area .arrow-narrow-btn .swiper-button-prev {
+    font-size: 25px;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-next {
+    right: 0;
+    bottom: 0;
+    top: 220px;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-prev {
+    right: 0;
+    top: 250px;
+  }
+  .banner-content {
+    margin-top: 0;
+  }
+  .banner-content .fs-18 {
+    font-size: 16px;
+  }
+  .banner-content .mb-4 {
+    margin-bottom: 29px !important;
+  }
+  .banner-content h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .banner-content .banner-btn span {
+    display: none;
+  }
+  .banner-image {
+    margin-bottom: 30px;
+  }
+  .banner-image .circle-arrow {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  /* Hero Area CSS h-3 */
+  .hero-warp .hero-content {
+    padding: 50px 20px 50px 30px;
+    max-width: 100%;
+  }
+  .hero-warp .hero-content .fs-18 {
+    font-size: 16px;
+  }
+  .hero-warp .hero-content h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .hero-warp .hero-content p {
+    margin-bottom: 30px;
+  }
+  .hero-warp .hero-content .hero-btn.d-flex {
+    display: block !important;
+  }
+  .hero-warp .hero-content .hero-btn .explore {
+    margin-top: 20px;
+  }
+  .hero-warp .h-shape-3 {
+    display: none;
+  }
+  .hero-items .hero-btn .swiper-button-next, .hero-items .hero-btn .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .hero-items .hero-btn .swiper-button-next {
+    right: -5px;
+    left: auto;
+  }
+  .hero-items .hero-btn .swiper-button-prev {
+    left: -5px;
+    right: auto;
+  }
+  /* page banner */
+  .page-banner-area {
+    padding: 50px 0;
+  }
+  .page-banner-content {
+    margin-bottom: 30px;
+  }
+  .page-banner-content h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .page-banner-content ul li {
+    font-size: 16px;
+  }
+  .page-banner-content ul li::before {
+    top: 4px;
+    right: -14px;
+  }
+  .page-banner-content .page-banner-shape-2 {
+    display: none;
+  }
+  .page-banner-image .page-banner-shape-1 {
+    display: none;
+  }
+  /* Advice Area CSS */
+  .advice-area {
+    transform: unset;
+    bottom: 0;
+    padding-top: 30px;
+  }
+  .advice-area .advice-content {
+    line-height: 30px;
+    animation: marquee 3s linear infinite forwards;
+  }
+  .advice-area .advice-content ul li {
+    font-size: 30px;
+  }
+  .advice-area.style-two {
+    padding-top: 50px;
+  }
+  /* Section Top Bar CSS */
+  .section-top-bar.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .section-top-bar .d-block {
+    display: inline-block !important;
+  }
+  .section-top-bar .section-heading {
+    margin-bottom: 15px !important;
+  }
+  .single-facilities-card {
+    padding: 30px 20px 15px;
+  }
+  /* Facilities Area CSS */
+  .sec-facilities-card {
+    padding: 20px 18px 0;
+  }
+  .sec-facilities-card::before {
+    height: 55%;
+  }
+  .sec-facilities-card .sec-facilities-card-body {
+    padding: 30px 0 30px;
+  }
+  .sec-facilities-items .facilities-pagination {
+    margin-top: 30px;
+  }
+  /* Oil Facilities Area CSS h-3 */
+  .oil-facilities-card .oil-facilities-image {
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+  }
+  .oil-facilities-card .oil-facilities-card-body {
+    padding: 30px 30px 30px 30px;
+  }
+  .oil-facilities-items .oil-pagination {
+    margin-top: 30px;
+  }
+  /* About Area CSS */
+  .about-area .section-heading .d-block {
+    display: inline-block !important;
+  }
+  .about-area .a-shape-1 {
+    display: none;
+  }
+  .about-image h1 {
+    top: 16%;
+    font-size: 50px;
+  }
+  .about-image .a-image-2 {
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .about-image .pe-4 {
+    padding-right: 0 !important;
+  }
+  .about-image .a-image-11 {
+    margin-bottom: 30px;
+  }
+  .about-btn .number {
+    display: none;
+  }
+  /* About Image CSS h-2 */
+  .about-area .check {
+    margin-bottom: 30px !important;
+  }
+  .about-area .check li {
+    gap: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .about-image .ps-5 {
+    padding-left: 0 !important;
+  }
+  .about-image .a-image-2.a-image-5 {
+    left: 0;
+    right: 0;
+    margin: 20px 0;
+  }
+  /* Services Area CSS */
+  .services-items.px-5 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .service-card .service-content {
+    padding: 20px 20px;
+  }
+  .service-card .service-content .d-block {
+    display: inline-block !important;
+  }
+  .service-card .service-content .fs-24 {
+    font-size: 20px;
+  }
+  /* Services Area CSS h-2 */
+  .sec-services-card {
+    padding: 30px 20px;
+  }
+  .sec-services-card .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 96px;
+    margin: 0 auto 30px;
+  }
+  .sec-services-card .icon img {
+    max-width: 50px;
+  }
+  .sec-services-card p {
+    margin-bottom: 25px;
+  }
+  .our-services-items .modern-pagination {
+    margin-top: 30px;
+  }
+  /* Services Tab Area CSS h-3 */
+  .services-tab .nav-tabs .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .services-tab .nav-tabs .nav-item .nav-link {
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+  .services-tab .nav-tabs .nav-item:last-child {
+    margin-bottom: 0;
+  }
+  .services-tab .tab-service-content {
+    margin-bottom: 30px;
+  }
+  .services-tab .tab-service-content .mb-4 {
+    margin-bottom: 25px !important;
+  }
+  /* Quote Area CSS */
+  .quote-warp {
+    padding: 50px 20px;
+  }
+  .quote-form .form-control {
+    margin-bottom: 15px;
+  }
+  /* Projects Area CSS */
+  .projects-card .projects-card-body {
+    padding: 25px 20px;
+  }
+  .projects-card .projects-card-body.d-flex {
+    display: block !important;
+  }
+  .projects-card .projects-card-body .default-btn {
+    opacity: 1;
+    margin-top: 20px;
+  }
+  /* Project Area CSS h-2 */
+  .project-area .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .project-warp {
+    display: block;
+  }
+  .project-warp .slide {
+    margin-bottom: 20px;
+  }
+  .project-warp .slide:last-child {
+    margin-bottom: 0;
+  }
+  .project-warp .project-inner {
+    padding: 20px 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  .project-warp .project-inner .fs-24 {
+    font-size: 20px;
+  }
+  .project-warp .project-inner .read-more.two {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  /* Project Area CSS h-3 */
+  .project-area.oli-projects .px-5 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .project-area.oli-projects .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+  /* Works Area CSS */
+  .works-area .post.gap-4 {
+    gap: 15px !important;
+  }
+  .works-area .post .fs-24 {
+    font-size: 20px;
+  }
+  .works-area .post .d-block {
+    display: inline-block !important;
+  }
+  .works-area .post .number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .works-area .a-shape-2 {
+    display: none;
+  }
+  .works-image {
+    margin-bottom: 30px;
+  }
+  .works-image .a-image-4 {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .works-image h1 {
+    font-size: 50px;
+  }
+  /* Works Area CSS h-2 */
+  .works-area.works-two .section-heading {
+    margin-bottom: 30px !important;
+  }
+  .works-area.works-two .works-image {
+    margin-bottom: 0;
+  }
+  .works-area.works-two .works-image .pe-5 {
+    padding-right: 0 !important;
+  }
+  .skills .skill-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .skills .skill-bar .skill-percentage::before {
+    font-size: 16px;
+    top: -33px;
+  }
+  .about-btn {
+    margin-top: 35px;
+  }
+  /* Fun Fact Area CSS */
+  .fact-row.g-4 {
+    --bs-gutter-x: 20px;
+  }
+  /* Fun Fact Area CSS h-3 */
+  .fun-fact-area.two .facts-card {
+    gap: 20px;
+  }
+  /* Testimonials Area CSS */
+  .testimonials-area .testimonials-pagination {
+    margin-top: 30px;
+  }
+  .testimonials-card {
+    padding: 25px 20px 25px 20px;
+  }
+  .testimonials-card .d-block {
+    display: inline-block !important;
+  }
+  .testimonials-card .fs-22 {
+    font-size: 18px;
+  }
+  .testimonials-card .cuts {
+    font-size: 30px;
+  }
+  .testimonials-card .bottom-bar .gap-4 {
+    gap: 10px !important;
+  }
+  .top-bar .section-heading {
+    margin-bottom: 40px !important;
+  }
+  /* Reviews Area CSS h-2 */
+  .reviews-area .section-heading {
+    margin-bottom: 40px !important;
+  }
+  .reviews-area .testimonials-card {
+    padding: 25px 20px 25px 20px;
+  }
+  .reviews-area .testimonials-card .mb-3 {
+    margin-bottom: 10px !important;
+  }
+  .section-btn .swiper-button-next, .section-btn .swiper-button-prev {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .section-btn .swiper-button-next {
+    left: 60px;
+    right: auto;
+  }
+  .section-btn .swiper-button-prev {
+    left: 0;
+    right: auto;
+  }
+  /* Team Area CSS */
+  .team-card .team-card-body {
+    padding: 25px 20px;
+  }
+  .team-card .team-card-body .fs-24 {
+    font-size: 20px;
+  }
+  .team-card .social {
+    right: 28px;
+  }
+  .team-items .team-pagination {
+    margin-top: 30px;
+  }
+  /* Candidate Area CSS h-2 */
+  .candidate-card .candidate-card-body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .candidate-card .candidate-card-body.two {
+    left: 20px;
+    right: 20px;
+  }
+  /* Certification Area CSS */
+  .certification-area .section-heading {
+    margin-bottom: 30px !important;
+  }
+  .certification-items .swiper-wrapper {
+    text-align: center;
+  }
+  /* Blog Area CSS */
+  .blog-warp.px-5 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .blog-card .blog-content {
+    padding: 25px 20px;
+  }
+  .blog-card .blog-content .list.gap-4 {
+    gap: 15px !important;
+  }
+  .blog-card .blog-content .list li {
+    font-size: 14px;
+  }
+  .blog-card .blog-content .list li::before {
+    right: -8px;
+  }
+  .blog-items .blog-pagination {
+    margin-top: 30px;
+  }
+  /* Post Area CSS h-2 */
+  .post-area .blog-card .blog-content {
+    padding: 30px 25px 30px;
+  }
+  .post-area .blog-card .blog-content .fs-24 {
+    font-size: 20px;
+  }
+  .post-area .blog-card .blog-content .list.gap-4 {
+    gap: 20px !important;
+  }
+  .post-area .blog-card .blog-content .list li::before {
+    right: -10px;
+  }
+  /* newsletter Area CSS */
+  .newsletter-bg {
+    padding: 50px 20px;
+  }
+  .newsletter-bg .section-heading {
+    margin-bottom: 20px !important;
+  }
+  .newsletter-form .default-btn {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 10px !important;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-1 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-3 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-weight {
+    padding-bottom: 30px;
+  }
+  .footer-weight .fs-24 {
+    font-size: 20px;
+  }
+  .footer-weight h3 {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+  }
+  .footer-weight .newsletter-form .default-btn {
+    margin-top: 0;
+    border-radius: 0 !important;
+  }
+  /* Copyright Area CSS */
+  .copyright-area p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .copyright-area .social.justify-content-end {
+    justify-content: center !important;
+  }
+  /* Pricing Area CSS h-2 */
+  .pricing-card {
+    padding: 20px 20px;
+  }
+  /* Appointment Area CSS h-2 */
+  .appointment-area {
+    padding: 50px 0;
+  }
+  .appointment-image {
+    margin-bottom: 30px;
+  }
+  .appointment-form .form-control {
+    margin-bottom: 15px;
+  }
+  /* Go Top Button CSS */
+  .go-top {
+    right: 15px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  /* blog details page */
+  .blog-details-content .mb-1 {
+    margin-bottom: 30px !important;
+  }
+  .blog-details-content .fs-24 {
+    font-size: 20px;
+  }
+  .project-details-image .popup-btn {
+    width: 60px;
+    height: 60px;
+  }
+  .project-details-image .play {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+  }
+  .project-details-image .play::after {
+    left: -6px;
+    width: 60px;
+    height: 60px;
+  }
+  .quote-card {
+    padding: 20px 20px;
+  }
+  .quote-card.d-flex {
+    display: block !important;
+  }
+  .quote-card .fs-18 {
+    font-size: 16px;
+  }
+  .share-tag {
+    padding: 15px 20px;
+  }
+  .share-tag .tags {
+    text-align: center;
+    margin-bottom: 10px !important;
+  }
+  .share-tag .share {
+    text-align: center;
+  }
+  .r-comment {
+    padding: 25px 20px;
+  }
+  .r-comment.d-flex {
+    display: block !important;
+  }
+  .r-comment img {
+    margin-bottom: 20px;
+  }
+  .r-comment.two {
+    padding: 25px 20px;
+  }
+  .comments {
+    padding: 25px 20px;
+  }
+  /**/
+  .sidebar .p-1 {
+    padding: 25px 20px !important;
+  }
+  /* Contact page CSS */
+  .address {
+    padding: 25px 20px;
+  }
+  .contact-form {
+    padding: 25px 20px;
+  }
+  /* Shop Details Page */
+  .shop-details-content {
+    padding-left: 0;
+  }
+  .product-review-area .nav-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .product-review-area .nav-item:last-child {
+    margin-bottom: 0;
+  }
+  .product-review-area .nav-link {
+    font-size: 16px;
+  }
+  .description-body {
+    padding: 20px 20px;
+  }
+  .description-body .rating-bar.d-flex {
+    display: block !important;
+  }
+  .description-body .rating-bar .default-btn {
+    margin-top: 20px;
+  }
+  .description-body .warp.d-flex {
+    display: block !important;
+  }
+  .description-body .warp span {
+    font-size: 15px;
+  }
+  .description-body .warp .read-more {
+    margin-top: 15px;
+  }
+  /* Checkout Page */
+  .checkout-form {
+    padding: 25px 20px;
+  }
+  /* Cart Page */
+  .cart-table {
+    color: var(--primary);
+    font-size: 20px;
+  }
+  .cart-table.p-5 {
+    padding: 20px !important;
+  }
+  .cart-buttons .continue-shopping-box .apply-btn {
+    position: relative;
+    margin: 10px 0;
+  }
+  .cart-buttons .update-cart-box.text-end {
+    text-align: start !important;
+  }
+  .summery-content.p-5 {
+    padding: 20px !important;
+  }
+  .summery-content .summery-icon {
+    padding: 20px 15px;
+  }
+  /* Project Details Page */
+  .project-details-content .mb-1 {
+    margin-bottom: 30px !important;
+  }
+  .project-details-content h1 {
+    font-size: 20px;
+  }
+  /* Service Details Page */
+  .service-details-content .mb-1 {
+    margin-bottom: 30px !important;
+  }
+  .service-details-content .fs-36 {
+    font-size: 20px;
+  }
+  .service-details-content .fs-24 {
+    font-size: 20px;
+  }
+  /* FAQ Page */
+  .faq-content .accordion-item .accordion-button {
+    padding: 20px 45px 20px 20px;
+  }
+  .faq-content .accordion-item .accordion-body {
+    padding: 0 20px 30px 20px;
+  }
+  /* Register Page */
+  .register-form.p-5 {
+    padding: 20px !important;
+  }
+  .register-form .warp.d-flex {
+    display: block !important;
+  }
+}
+/* Min width 576px */
+/* Min width 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 720px;
+  }
+  .container-fluid.sp-padding {
+    max-width: 720px;
+  }
+  .container-fluid.ht-padding {
+    max-width: 720px;
+  }
+  .container-fluid.left-padding {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-120 {
+    padding-top: 60px;
+  }
+  .pb-120 {
+    padding-bottom: 60px;
+  }
+  .ptb-100 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-100 {
+    padding-top: 60px;
+  }
+  .pb-100 {
+    padding-bottom: 60px;
+  }
+  /* Header Area CSS */
+  .header-area .left-side {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px !important;
+  }
+  .header-area .left-side li::before {
+    height: 100%;
+    top: 0;
+    right: -17px;
+  }
+  .header-area .right-side {
+    text-align: center;
+  }
+  .header-area .right-side li {
+    margin-right: 30px;
+  }
+  .header-area .right-side li::before {
+    height: 100%;
+    top: 0;
+    right: -18px;
+  }
+  /* Top Menu Area CSS */
+  .top-menu-area {
+    padding: 20px 0;
+  }
+  .top-menu-area .pe-5 {
+    padding-right: 20px !important;
+  }
+  .top-menu-area .logo {
+    display: none;
+  }
+  .top-menu-area .collapse:not(.show) {
+    display: block;
+  }
+  .top-menu-area .navbar-nav {
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  .top-menu-area .navbar-nav.align-items-center {
+    align-items: start !important;
+  }
+  .top-menu-area .navbar-nav .nav-item::before {
+    display: none;
+  }
+  /* Navbar Area CSS */
+  .navbar.style-three {
+    margin-bottom: 0;
+  }
+  .navbar.style-three .main-logo {
+    display: block;
+  }
+  .navbar.style-three .navbar-toggler {
+    right: 40px;
+  }
+  .navbar.style-three .navbar-toggler .burger-menu span {
+    background-color: var(--dark);
+  }
+  .navbar.style-three .others-options {
+    margin-right: 50px;
+  }
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 0;
+  }
+  .navbar .navbar-toggler .burger-menu span {
+    background-color: var(--white);
+  }
+  .navbar .others-options {
+    margin-right: 40px;
+  }
+  .navbar .others-options ul li .default-btn {
+    font-size: 16px;
+    padding: 14px 30px 14px;
+  }
+  .navbar .others-options ul li .cart-btn.border-style::before {
+    display: none;
+  }
+  /* Main Banner Area CSS */
+  .main-banner-area {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .main-banner-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .main-banner-content .h-shape-2 {
+    right: 0;
+    max-width: 60px;
+  }
+  .main-banner-content .main-banner-image {
+    right: 0;
+    max-width: 600px;
+  }
+  .main-banner-content .main-banner-image .circle-arrow {
+    left: 0;
+  }
+  /* Banner Content CSS h-2 */
+  .banner-area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .banner-area .social-links {
+    top: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    transform: unset;
+    writing-mode: initial;
+    justify-content: center;
+    bottom: 0;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-next {
+    right: -10px;
+    bottom: 0;
+    top: 160px;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-prev {
+    right: -10px;
+  }
+  .banner-content {
+    margin-top: 0;
+  }
+  .banner-image {
+    margin-bottom: 30px;
+  }
+  .banner-image .circle-arrow {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  /* Hero Area CSS h-3 */
+  .hero-warp .hero-content {
+    padding: 70px 30px 70px 50px;
+    max-width: 770px;
+  }
+  .hero-warp .hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  .hero-warp .h-shape-3 {
+    display: none;
+  }
+  .hero-items .hero-btn .swiper-button-next, .hero-items .hero-btn .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+  }
+  .hero-items .hero-btn .swiper-button-next {
+    right: -12px;
+    left: auto;
+  }
+  .hero-items .hero-btn .swiper-button-prev {
+    left: -12px;
+    right: auto;
+  }
+  /* page banner */
+  .page-banner-area {
+    padding: 70px 0;
+  }
+  .page-banner-content h1 {
+    font-size: 40px;
+  }
+  .page-banner-content .page-banner-shape-2 {
+    display: none;
+  }
+  .page-banner-image .page-banner-shape-1 {
+    display: none;
+  }
+  /* Section Top Bar CSS */
+  .section-top-bar.mb-5 {
+    margin-bottom: 40px !important;
+  }
+  .section-top-bar .d-block {
+    display: inline-block !important;
+  }
+  .section-top-bar .section-heading {
+    margin-bottom: 20px !important;
+  }
+  .section-top-bar .section-btn {
+    max-width: 100% !important;
+  }
+  /* About Area CSS */
+  .about-area .section-heading {
+    max-width: 100% !important;
+  }
+  .about-area .section-heading p .d-block {
+    display: inline-block !important;
+  }
+  .about-area .a-shape-1 {
+    right: 100px;
+    bottom: 0;
+  }
+  .about-image h1 {
+    top: 40%;
+    left: -25%;
+  }
+  .about-image .a-image-11 {
+    margin-bottom: 30px;
+  }
+  /* Services Area CSS */
+  .services-items.px-5 {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .service-card .service-content {
+    padding: 20px 25px;
+  }
+  .service-card .service-content .d-block {
+    display: inline-block !important;
+  }
+  .service-card .service-content .fs-24 {
+    font-size: 20px;
+  }
+  /* Services Area CSS h-2 */
+  .sec-services-card {
+    padding: 30px 20px;
+  }
+  .sec-services-card .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 96px;
+    margin: 0 auto 30px;
+  }
+  .sec-services-card .icon img {
+    max-width: 50px;
+  }
+  .sec-services-card p {
+    margin-bottom: 25px;
+  }
+  /* Services Tab Area CSS h-3 */
+  .services-tab .nav-tabs {
+    margin-bottom: 30px;
+  }
+  .services-tab .nav-tabs .nav-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .services-tab .nav-tabs .nav-item .nav-link {
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+  .services-tab .nav-tabs .nav-item:last-child {
+    margin-bottom: 0;
+  }
+  .services-tab .tab-service-content {
+    margin-bottom: 30px;
+  }
+  .services-tab .tab-service-content .mb-4 {
+    margin-bottom: 25px !important;
+  }
+  /* Quote Area CSS */
+  .quote-form .form-control {
+    margin-bottom: 15px;
+  }
+  /* Works Area CSS */
+  .works-image {
+    margin-bottom: 30px;
+  }
+  /* Works Area CSS h-2 */
+  .works-area.works-two .section-heading {
+    margin-bottom: 30px !important;
+    max-width: 100% !important;
+  }
+  .works-area.works-two .works-image {
+    margin-bottom: 0;
+  }
+  .works-area.works-two .works-image .pe-5 {
+    padding-right: 0 !important;
+  }
+  .works-area.works-two .works-image .hi-work {
+    right: 0;
+  }
+  /* Project Area CSS h-3 */
+  .works-area.choose-us .works-image h1 {
+    left: -22%;
+  }
+  .works-area.choose-us .section-heading {
+    max-width: 100% !important;
+  }
+  /* Project Area CSS h-2 */
+  .project-area .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .project-warp {
+    gap: 15px;
+  }
+  .project-warp .slide.active {
+    flex: 5;
+  }
+  .project-warp .project-inner {
+    padding: 20px 20px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  .project-warp .project-inner .fs-24 {
+    font-size: 20px;
+  }
+  .project-warp .project-inner .read-more.two {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  /* Project Area CSS h-3 */
+  .project-area.oli-projects .px-5 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .project-area.oli-projects .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+  /* Fun Fact Area CSS */
+  .fact-row.g-4 {
+    --bs-gutter-x: 30px;
+  }
+  /* Testimonials Area CSS */
+  .testimonials-card {
+    padding: 25px 20px 25px 20px;
+  }
+  .testimonials-card .d-block {
+    display: inline-block !important;
+  }
+  .testimonials-card .fs-22 {
+    font-size: 18px;
+  }
+  .testimonials-card .cuts {
+    font-size: 40px;
+  }
+  .testimonials-area .section-heading h2 {
+    font-size: 45px;
+  }
+  /* Reviews Area CSS h-2 */
+  .reviews-area .section-heading h2 {
+    font-size: 40px;
+  }
+  /* Certification Area CSS */
+  .certification-area .section-heading {
+    margin-bottom: 35px !important;
+  }
+  .certification-items .swiper-wrapper {
+    text-align: center;
+  }
+  /* Facilities Area CSS */
+  .sec-facilities-card::before {
+    height: 50%;
+  }
+  .sec-facilities-card .sec-facilities-card-body {
+    padding: 30px 0 30px;
+  }
+  /* Oil Facilities Area CSS h-3 */
+  .oil-facilities-card .oil-facilities-image {
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+  }
+  .oil-facilities-card .oil-facilities-card-body {
+    padding: 30px 30px 30px 30px;
+  }
+  /* Blog Area CSS */
+  .blog-warp.px-5 {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .blog-card .blog-content {
+    padding: 30px 25px;
+  }
+  .blog-card .blog-content .fs-24 {
+    font-size: 20px;
+  }
+  .blog-items .blog-pagination {
+    margin-top: 30px;
+  }
+  /* newsletter Area CSS */
+  .newsletter-bg .section-heading {
+    margin-bottom: 25px !important;
+  }
+  .newsletter-form {
+    max-width: 100% !important;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-1 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-3 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-weight {
+    padding-bottom: 50px;
+  }
+  /* Appointment Area CSS h-2 */
+  .appointment-area {
+    padding: 60px 0;
+  }
+  .appointment-image {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .appointment-form {
+    max-width: 100% !important;
+  }
+  .appointment-form .form-control {
+    margin-bottom: 20px;
+  }
+  .go-top {
+    right: 15px;
+  }
+  /* Contact page CSS */
+  .address {
+    padding: 25px 20px;
+  }
+  .contact-form {
+    padding: 30px 30px;
+  }
+  /* Shop Details Page */
+  .shop-details-content {
+    padding-left: 0;
+    max-width: 100% !important;
+  }
+  .description-body {
+    padding: 40px 40px;
+  }
+  .product-review-area .container {
+    max-width: 720px !important;
+  }
+  .product-review-area .nav-item {
+    margin-right: 40px;
+  }
+}
+/* Min width 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 960px;
+  }
+  .container-fluid.sp-padding {
+    max-width: 960px;
+  }
+  .container-fluid.ht-padding {
+    max-width: 960px;
+  }
+  .container-fluid.left-padding {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .pt-120 {
+    padding-top: 100px;
+  }
+  .pb-120 {
+    padding-bottom: 100px;
+  }
+  .ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /* Header Area CSS */
+  .header-area .left-side {
+    gap: 30px;
+  }
+  .header-area .left-side li::before {
+    height: 100%;
+    top: 0;
+    right: -17px;
+  }
+  .header-area .right-side li {
+    margin-right: 30px;
+  }
+  .header-area .right-side li::before {
+    height: 100%;
+    top: 0;
+    right: -18px;
+  }
+  /* Top Menu Area CSS */
+  .top-menu-area .pe-5 {
+    padding-right: 40px !important;
+  }
+  .top-menu-area .logo {
+    display: none;
+  }
+  .top-menu-area .collapse.navbar-collapse {
+    display: flex !important;
+  }
+  .top-menu-area .navbar-nav {
+    margin-bottom: 20px;
+    gap: 50px;
+  }
+  .top-menu-area .navbar-nav.ms-auto {
+    margin-left: 0 !important;
+  }
+  .top-menu-area .navbar-nav .nav-item::before {
+    display: none;
+  }
+  /* Navbar Area CSS */
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+  .navbar.style-three {
+    margin-bottom: 0;
+  }
+  .navbar.style-three .main-logo {
+    display: block;
+  }
+  .navbar.style-three .navbar-toggler {
+    right: 40px;
+  }
+  .navbar.style-three .navbar-toggler .burger-menu span {
+    background-color: var(--dark);
+  }
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 0;
+  }
+  .navbar .navbar-toggler .burger-menu span {
+    background-color: var(--white);
+  }
+  .navbar .others-options {
+    margin-right: 50px;
+  }
+  .navbar .others-options ul li .default-btn {
+    padding: 14px 30px 14px;
+  }
+  .navbar .others-options ul li .cart-btn.border-style::before {
+    display: none;
+  }
+  /* Main Banner Area CSS */
+  .main-banner-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .main-banner-content h1 {
+    font-size: 65px;
+    margin-bottom: 25px;
+  }
+  .main-banner-content .main-banner-image {
+    right: 0;
+    max-width: 650px;
+  }
+  /* Banner Content CSS h-3 */
+  .banner-area .arrow-narrow-btn .swiper-button-next {
+    right: 10px;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-prev {
+    right: 10px;
+  }
+  .banner-area .social-links {
+    top: auto;
+    transform: unset;
+    writing-mode: inherit;
+    bottom: 50px;
+  }
+  .banner-content {
+    margin-top: 20px;
+  }
+  .banner-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  .banner-image .circle-arrow {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  /* Hero Area CSS h-3 */
+  .hero-warp .hero-content {
+    padding: 100px 0 100px 90px;
+    max-width: 770px;
+  }
+  .hero-warp .h-shape-3 {
+    right: 80px;
+    bottom: 70px;
+  }
+  .hero-items .hero-btn .swiper-button-next {
+    right: 5px;
+    left: auto;
+  }
+  .hero-items .hero-btn .swiper-button-prev {
+    left: 5px;
+    right: auto;
+  }
+  /* Page Banner Area CSS */
+  .page-banner-content .page-banner-shape-2 {
+    display: none;
+  }
+  /* Section Top Bar CSS */
+  .section-top-bar .d-block {
+    display: inline-block !important;
+  }
+  .section-top-bar .section-heading h2 {
+    font-size: 40px;
+  }
+  .single-facilities-card {
+    padding: 30px 20px 30px;
+  }
+  .single-facilities-card .facilities-image {
+    max-width: 100px;
+  }
+  /* Oil Facilities Area CSS h-3 */
+  .oil-facilities-card .oil-facilities-card-body {
+    padding: 30px 30px 30px 0;
+  }
+  /* About Area CSS */
+  .about-area .section-heading h2 {
+    font-size: 45px;
+  }
+  .about-area .section-heading p .d-block {
+    display: inline-block !important;
+  }
+  .about-area .a-shape-1 {
+    display: none;
+  }
+  .about-image .text-end {
+    text-align: start !important;
+  }
+  .about-image h1 {
+    top: 30%;
+    font-size: 75px;
+  }
+  .about-btn .gap-4 {
+    gap: 15px !important;
+  }
+  .about-btn .number a {
+    font-size: 16px;
+  }
+  /* About Image CSS h-2 */
+  .about-image .a-image-2.a-image-5 {
+    left: 0;
+    right: 0;
+  }
+  /* Services Tab Area CSS h-3 */
+  .services-tab .nav-tabs {
+    margin-bottom: 35px;
+  }
+  .services-tab .nav-tabs .nav-item {
+    margin-right: 10px;
+  }
+  .services-tab .nav-tabs .nav-item .nav-link {
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+  .services-tab .tab-service-content {
+    margin-bottom: 30px;
+  }
+  .services-tab .tab-service-content .mb-4 {
+    margin-bottom: 25px !important;
+  }
+  /* Works Area CSS */
+  .works-area .section-heading h2 {
+    font-size: 45px;
+  }
+  .works-area .section-heading p .d-block {
+    display: inline-block !important;
+  }
+  .works-area .a-shape-2 {
+    display: none;
+  }
+  /* Works Area CSS h-2 */
+  .works-area.works-two .works-image .pe-5 {
+    padding-right: 0 !important;
+  }
+  /* Project Area CSS h-2 */
+  .project-area .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .project-warp {
+    gap: 15px;
+  }
+  .project-warp .slide.active {
+    flex: 4;
+  }
+  .project-warp .project-inner {
+    padding: 25px 25px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+  .project-warp .project-inner .fs-24 {
+    font-size: 20px;
+  }
+  .project-warp .project-inner .read-more.two {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  /* Fun Fact Area CSS */
+  .fact-row.g-4 {
+    --bs-gutter-x: 24px;
+  }
+  .facts-card {
+    gap: 20px;
+  }
+  .facts-card .fs-46 {
+    font-size: 40px;
+  }
+  .facts-card img {
+    max-width: 50px;
+  }
+  .facts-card span {
+    font-size: 15px;
+  }
+  /* Testimonials Area CSS */
+  .testimonials-card .d-block {
+    display: inline-block !important;
+  }
+  /* Team Area CSS */
+  .team-card .team-card-body {
+    padding: 25px 20px;
+  }
+  .team-card .social {
+    right: 28px;
+  }
+  /* Certification Area CSS */
+  .certification-area .section-heading .d-block {
+    display: inline-block !important;
+  }
+  /* Blog Area CSS */
+  .blog-card .blog-content {
+    padding: 30px 30px;
+  }
+  /* Post Area CSS h-3 */
+  .post-area .blog-card .blog-content {
+    padding: 30px 20px 30px;
+  }
+  .post-area .blog-card .blog-content .gap-4 {
+    gap: 15px !important;
+  }
+  .post-area .blog-card .blog-content .list li::before {
+    top: 6px;
+    right: -9px;
+  }
+  /* newsletter Area CSS */
+  .newsletter-bg {
+    padding: 60px 30px;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-1 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-3 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-weight {
+    padding-bottom: 50px;
+  }
+  /* Appointment Area CSS h-2 */
+  .appointment-form .form-control {
+    margin-bottom: 15px;
+  }
+  /* Go Top Button CSS */
+  .go-top {
+    right: 15px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .go-top.active {
+    top: 93%;
+  }
+  /* Comment Area CSS */
+  .quote-card {
+    padding: 30px 30px;
+  }
+  .share-tag {
+    padding: 15px 20px;
+  }
+  .r-comment {
+    padding: 30px 30px;
+  }
+  .comments {
+    padding: 30px 30px;
+  }
+  /* Sidebar CSS */
+  .sidebar .p-1 {
+    padding: 30px 20px !important;
+  }
+  /* Contact page CSS */
+  .address {
+    padding: 30px 30px;
+  }
+  /* Shop Details Page */
+  .shop-details-content {
+    padding-left: 0;
+    max-width: 100% !important;
+  }
+  .shop-details-content p .d-block {
+    display: inline-block !important;
+  }
+  .description-body {
+    padding: 40px 40px;
+  }
+  .product-review-area .container {
+    max-width: 960px !important;
+  }
+  .product-review-area .nav-item {
+    margin-right: 40px;
+  }
+}
+/* Min width 1200px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 1140px;
+  }
+  .container-fluid.sp-padding {
+    max-width: 1140px;
+  }
+  .container-fluid.ht-padding {
+    max-width: 1140px;
+  }
+  .container-fluid.left-padding {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Header Area CSS */
+  .header-area .left-side {
+    gap: 30px;
+  }
+  .header-area .left-side li::before {
+    height: 100%;
+    top: 0;
+    right: -17px;
+  }
+  .header-area .right-side li {
+    margin-right: 30px;
+  }
+  .header-area .right-side li::before {
+    height: 100%;
+    top: 0;
+    right: -18px;
+  }
+  /* Top Menu Area CSS */
+  .top-menu-area .pe-5 {
+    padding-right: 40px !important;
+  }
+  .top-menu-area .navbar-nav {
+    gap: 40px;
+  }
+  .top-menu-area .navbar-nav .nav-item::before {
+    display: none;
+  }
+  /* Navbar Area CSS */
+  .navbar .navbar-nav .nav-item {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+    right: 6px;
+    top: 20px;
+    font-size: 10px;
+  }
+  .navbar.style-three {
+    margin-bottom: 0;
+  }
+  .navbar.style-three .container-fluid {
+    padding: 15px 10px;
+  }
+  .navbar.style-three.sticky .container-fluid {
+    padding: 15px 30px;
+  }
+  .navbar .others-options ul li {
+    margin-right: 12px;
+  }
+  .navbar .others-options ul li .default-btn {
+    padding: 14px 15px 14px;
+    font-size: 14px;
+  }
+  /* Main Banner Area CSS */
+  .main-banner-content h1 {
+    font-size: 90px;
+  }
+  .main-banner-content .main-banner-image {
+    right: 0;
+    max-width: 800px;
+  }
+  /* Banner Content CSS h-3 */
+  .banner-area .arrow-narrow-btn .swiper-button-next {
+    right: 10px;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-prev {
+    right: 10px;
+  }
+  .banner-area .social-links {
+    top: auto;
+    transform: unset;
+    writing-mode: inherit;
+    bottom: 70px;
+    left: 40px;
+  }
+  .banner-content {
+    margin-top: 100px;
+  }
+  .banner-content .mb-4 {
+    margin-bottom: 35px !important;
+  }
+  .banner-content h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+  }
+  .banner-image .circle-arrow {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  /* Hero Area CSS h-3 */
+  .hero-warp .hero-content {
+    padding: 120px 0 120px 100px;
+    max-width: 770px;
+  }
+  /* Page Banner Area CSS */
+  .page-banner-content .page-banner-shape-2 {
+    right: 50px;
+    max-width: 50px;
+  }
+  /* Section Top Bar CSS */
+  .section-top-bar .d-block {
+    display: inline-block !important;
+  }
+  .section-top-bar .section-heading h2 {
+    font-size: 48px;
+  }
+  .single-facilities-card {
+    padding: 35px 30px 35px;
+  }
+  /* Facilities Area CSS h-2 */
+  .sec-facilities-card::before {
+    height: 50%;
+  }
+  .sec-facilities-card .sec-facilities-card-body {
+    padding: 30px 0 30px;
+  }
+  /* About Area CSS */
+  .about-area .section-heading h2 {
+    font-size: 45px;
+  }
+  .about-area .a-shape-1 {
+    display: none;
+  }
+  .about-image h1 {
+    top: 25%;
+    left: -25%;
+    font-size: 70px;
+  }
+  .about-image .a-image-2 {
+    left: 0;
+  }
+  /* About Area CSS h-2 */
+  .about-image .a-image-2.a-image-5 {
+    left: 0;
+    right: 0;
+  }
+  /* Services Area CSS h-2 */
+  .sec-services-card {
+    padding: 30px 20px;
+  }
+  .sec-services-card .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 96px;
+    margin: 0 auto 30px;
+  }
+  .sec-services-card .icon img {
+    max-width: 50px;
+  }
+  .sec-services-card p {
+    margin-bottom: 25px;
+  }
+  /* Services Tab Area CSS h-3 */
+  .services-tab .nav-tabs .nav-item .nav-link {
+    padding: 35px 35px;
+    font-size: 20px;
+  }
+  /* Projects Area CSS */
+  .projects-card .projects-card-body {
+    padding: 25px 20px;
+  }
+  .projects-card .projects-card-body .fs-24 {
+    font-size: 20px;
+  }
+  .projects-card .projects-card-body .default-btn {
+    width: 40px;
+    height: 40px;
+    line-height: 23px;
+    font-size: 22px;
+  }
+  /* Project Area CSS h-2 */
+  .project-area .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  /* Fun Fact Area CSS */
+  .fact-row.g-4 {
+    --bs-gutter-x: 24px;
+  }
+  .facts-card {
+    gap: 15px;
+  }
+  .facts-card img {
+    max-width: 60px;
+  }
+  /* Works Area CSS h-2 */
+  .works-area.works-two .works-image .pe-5 {
+    padding-right: 0 !important;
+  }
+  /* Fun Fact Area CSS h-2 */
+  .fun-fact-area.two .facts-card {
+    padding: 25px 20px;
+  }
+  .fun-fact-area.two .facts-card .fs-36 {
+    font-size: 30px;
+  }
+  .fun-fact-area.two .facts-card .icon {
+    width: 55px;
+    height: 55px;
+    line-height: 66px;
+    font-size: 30px;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-1 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-3 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-2 {
+    padding-left: 0 !important;
+  }
+  .footer-area.s-three .ps-5 {
+    padding-left: 0 !important;
+  }
+  /* Go Top Button CSS */
+  .go-top {
+    right: 15px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  /* Contact page CSS */
+  .address {
+    padding: 30px 20px;
+  }
+  .address i {
+    width: 50px;
+    height: 50px;
+    line-height: 56px;
+  }
+  .address a {
+    font-size: 15px;
+  }
+  /* Products page CSS */
+  .products-cart .products-cart-body .fs-24 {
+    font-size: 20px;
+  }
+}
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 1320px;
+  }
+  .container-fluid.sp-padding {
+    max-width: 1320px;
+  }
+  .container-fluid.ht-padding {
+    max-width: 1320px;
+  }
+  .container-fluid.left-padding {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Navbar Area CSS */
+  .navbar .navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .navbar .others-options ul li {
+    margin-right: 20px;
+  }
+  /* Banner Content CSS h-2 */
+  .banner-area .arrow-narrow-btn .swiper-button-next {
+    right: -30px;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-prev {
+    right: -30px;
+  }
+  .banner-area .social-links {
+    left: 0;
+  }
+  .banner-content h1 {
+    font-size: 75px;
+  }
+  .banner-image .circle-arrow {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  /* Hero Area CSS h-3 */
+  .hero-warp .hero-content {
+    padding: 145px 0 145px 120px;
+    max-width: 800px;
+  }
+  /* Facilities Area CSS */
+  .single-facilities-card {
+    padding: 35px 35px;
+  }
+  /* Projects Area CSS */
+  .projects-card .projects-card-body {
+    padding: 30px 25px;
+  }
+  /* Works Area CSS h-2 */
+  .works-area.works-two .works-image .pe-5 {
+    padding-right: 0 !important;
+  }
+  .works-area.works-two .works-image .hi-work {
+    right: -30%;
+  }
+  /* Project Area CSS h-2 */
+  .project-area .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  /* Go Top Button CSS */
+  .go-top {
+    right: 15px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) and (max-width: 1899px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 1520px;
+  }
+  .container-fluid.sp-padding {
+    max-width: 1520px;
+  }
+  .container-fluid.left-padding {
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Banner Content CSS h-2 */
+  .banner-area .arrow-narrow-btn .swiper-button-next {
+    right: -30px;
+  }
+  .banner-area .arrow-narrow-btn .swiper-button-prev {
+    right: -30px;
+  }
+  .banner-area .social-links {
+    left: 0;
+  }
+  /* Project Area CSS h-2 */
+  .project-area .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+/* Min width 2000px *//*# sourceMappingURL=responsive.css.map */

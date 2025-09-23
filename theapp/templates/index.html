@@ -1,111 +1,1355 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PowerSphere — 3D Bootstrap Template</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{% static 'css/style.css' %}" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="{% static 'images/logo.png' %}" alt="PowerSphere logo">
-      <!--<span class="ms-3 fw-bold text-dark" style="font-size:1.15rem">PowerSphere</span>-->
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <!-- Title -->
+        <title>Torado - Oil & Gas Industry</title>
 
-<section class="hero">
-  <div class="container pt-5">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="stage mb-4" id="stage">
-          <div class="card-3d p-0" id="card" style="padding:0;">
-            <img class="img-fluid" src="{% static 'images/placeholder.jpg' %}" alt="home image">
-            <!--<div class="row g-0">
-              <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
-                <div class="device m-4 d-flex align-items-center justify-content-center">
-                  <div class="text-center">
-                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#0b4f93" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="#0b4f93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <div class="mt-2 fw-semibold" style="color:var(--brand)">Smart Power Management</div>
-                  </div>
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/flaticon_my-icons.css' %}">
+        <link rel="stylesheet" href="{% static 'css/tabler-icons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/scrollCue.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.svg'%}">
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Preloader End -->
+
+        <!-- Start Header Area -->
+        <div class="header-area bg-db001b">
+            <div class="container-fluid side-padding">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-8 col-md-12">
+                        <ul class="left-side ps-0 pe-0 mb-0 list-unstyled">
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-mail"></i> <a href="mailto:hello@torado.com">info@powershereengineering.com</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-map-pin"></i> Lagos, Nigeria
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-phone"></i> <a href="tel:840378260852">+234 1111 111 111</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-md-12">
+                        <ul class="right-side ps-0 pe-0 mb-0 list-unstyled">
+                            <li>
+                                <i class="ti ti-clock-hour-3 clock"></i>
+                                Mon-Fri: 8 am - 5 pm
+                            </li>
+                            <li>
+                                <div class="language-selector d-flex align-items-center">
+                                    <div class="shrink-0 d-flex">
+                                        <i class="ti ti-world world"></i>
+                                    </div>
+
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>English</option>
+                                        <option value="1">Russian</option>
+                                        <option value="2">Espanol</option>
+                                        <option value="3">Chinese</option>
+                                        <option value="4">Spanish</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <span class="badge-accent">New</span>
-                  <h2 class="mt-3" style="color:var(--brand)">PowerSphere Energy Jacking</h2>
-                  <p class="text-muted">The future of power — engineered today. Simple monitoring, reliable lifts, and smart control for industrial jacks & lifting solutions.</p>
-                  <div class="d-flex gap-2 mt-3">
-                    <a class="btn btn-primary btn-lg" href="#contact">Request Quote</a>
-                    <a class="btn btn-outline-secondary btn-lg" href="#features">Learn More</a>
-                  </div>
+            </div>
+        </div>
+        <!-- Header Area End -->
+
+        <!-- Start Mobile Menu -->
+        <div class="side-modal mobile-navbar offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+            <div class="offcanvas-header">
+                <a href="index.html">
+                    <img src="{% static 'images/logo.svg' %}" alt="image">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="mobile-menu">
+                    <li class="mobile-menu-list active">
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="mobile-menu-list">
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+                    
+                    <li class="mobile-menu-list">
+                        <a href="#">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="mobile-menu-list">
+                        <a href="#">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="mobile-menu-list dropdown">
+                        <a class="nav-link" href="contact-us.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Mobile Menu -->
+
+        <!-- Start Navbar Area -->
+        <nav class="navbar main-navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid side-padding position-relative">
+                <a class="navbar-brand logo-brand p-0" href="index.html">
+                    <img class="main-logo" src="{% static 'images/logo.png' %}" alt="image">
+                </a>
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button"
+                    aria-controls="offcanvasRight">
+                    <span class="burger-menu">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </span>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto d-flex justify-content-center gap-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" role="button">
+                                Home
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                About Us
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Services
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Projects
+                            </a>                            
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
+            </div>
+        </nav>
+        <!-- End Navbar Area -->
+
+        <!-- Search Modal -->
+        <div class="search-modal modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="popup-form">
+                            <input type="text" class="form-control" placeholder="Search here...">
+                            <button type="submit" class="p-btn">
+                                <i class="flaticon-search-1"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+
+        <!-- Start Hero Area -->
+        <div class="hero-area position-relative overflow-hidden z-1 pt-4">
+            <div class="container-fluid side-padding">
+                <div class="hero-items position-relative">
+                    <div class="swiper hero_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="hero-warp rounded-3 position-relative z-1" style="background-image: url('{% static "images/hero/h-image-4.jpg" %}');">
+                                    <div class="hero-content" data-cues="slideInUp" data-group="group-animation">
+                                        <h1 class="text-white">We Are Always Best For Industrial Solution!</h1>
+                                        <p class="fs-18 text-white">There are many variations of passages of lorem Ipsum available but the maborin have suffered alteration which dont look even slightly magna.</p>
+
+                                        <div class="hero-btn d-flex align-items-center">
+                                            <a href="contact-us.html" class="default-btn style-four">Contact Now</a>
+                                            <a href="about-us.html" class="default-btn style-four explore">Explore More</a>
+                                        </div>
+                                    </div>
+                                    <img class="h-shape-3" src="{% static 'images/shape/h-shape-3.png' %}" alt="shape image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-warp rounded-3 position-relative z-1" style="background-image: url('{% static "images/hero/h-image-5.jpg" %}');">
+                                    <div class="hero-content">
+                                        <h1 class="text-white">We Are Always Best For Industrial Solution!</h1>
+                                        <p class="fs-18 text-white">There are many variations of passages of lorem Ipsum available but the maborin have suffered alteration which dont look even slightly magna.</p>
+
+                                        <div class="hero-btn d-flex align-items-center">
+                                            <a href="contact-us.html" class="default-btn style-four">Contact Now</a>
+                                            <a href="about-us.html" class="default-btn style-four explore">Explore More</a>
+                                        </div>
+                                    </div>
+                                    <img class="h-shape-3" src="{% static 'images/shape/h-shape-3.png' %}" alt="shape image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-warp rounded-3 position-relative z-1" style="background-image: url('{% static "images/hero/h-image-6.jpg" %}');">
+                                    <div class="hero-content">
+                                        <h1 class="text-white">We Are Always Best For Industrial Solution!</h1>
+                                        <p class="fs-18 text-white">There are many variations of passages of lorem Ipsum available but the maborin have suffered alteration which dont look even slightly magna.</p>
+
+                                        <div class="hero-btn d-flex align-items-center">
+                                            <a href="contact-us.html" class="default-btn style-four">Contact Now</a>
+                                            <a href="about-us.html" class="default-btn style-four explore">Explore More</a>
+                                        </div>
+                                    </div>
+                                    <img class="h-shape-3" src="{% static 'images/shape/h-shape-3.png' %}" alt="shape image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-btn">
+                        <div class="swiper-button-next">
+                            <i class="ti ti-arrow-right"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ti ti-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Area -->
+
+        <!-- Start Core Values -->
+        <div class="advice-area style-two bg-f3f3f3 ptb-100 overflow-hidden">
+            <div class="container-fluid">
+                <div class="advice-content">
+                    <ul class="ps-0 pe-0 mb-0 list-unstyled">
+                        <li>
+                            High Expectations For Increased Economic Growth, Commodity Prices
+                        </li>
+                        <li>
+                            High Expectations For Increased Economic Growth, Commodity Prices
+                        </li>
+                        <li>
+                            High Expectations For Increased Economic Growth, Commodity Prices
+                        </li>
+                        <li>
+                            High Expectations For Increased Economic Growth, Commodity Prices
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Advice Area -->
+
+        <!-- Start Oil Facilities Area -->
+        <div class="oil-facilities-area bg-f3f3f3 pb-120">
+            <div class="container">
+                <div class="section-title" style="max-width: 605px;">
+                    <span class="sub-title">Our Approach</span>
+                    <h2>Believe In The Finest Grade Filtered Oil Quality</h2>
+                </div>
+                <div class="oil-facilities-items position-relative">
+                    <div class="swiper oil_facilities">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="oil-facilities-card rounded-3 bg-white bx">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-5">
+                                            <div class="oil-facilities-image" style="background-image: url('{% static "images/footer/f-image-10.jpg"%} ');"></div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="oil-facilities-card-body">
+                                                <img class="facilities-5 mb-4" src="{% static 'images/icon/facilities-5.svg' %}" alt="image">
+                                                <h3 class="fs-24 lh-1 mb-3">Thermal Power</h3>
+                                                <p>Sed perspiciatis unde omnis iste na volupem accusantium doloremque laudant aperiam eaque ipsa qua.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="oil-facilities-card rounded-3 bg-white bx">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-5">
+                                            <div class="oil-facilities-image" style="background-image: url('{% static "images/footer/f-image-11.jpg" %} ');"></div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="oil-facilities-card-body">
+                                                <img class="facilities-5 mb-4" src="{ static 'images/icon/facilities-6.svg'}" alt="image">
+                                                <h3 class="fs-24 lh-1 mb-3">Oil Platform</h3>
+                                                <p>Sed perspiciatis unde omnis iste na volupem accusantium doloremque laudant aperiam eaque ipsa qua.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="oil-facilities-card rounded-3 bg-white bx">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-5">
+                                            <div class="oil-facilities-image" style="background-image: url('{% static "images/footer/f-image-10.jpg" %}');"></div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="oil-facilities-card-body">
+                                                <img class="facilities-5 mb-4" src="{% static 'images/icon/facilities-5.svg' %}" alt="image">
+                                                <h3 class="fs-24 lh-1 mb-3">Gas Platform</h3>
+                                                <p>Sed perspiciatis unde omnis iste na volupem accusantium doloremque laudant aperiam eaque ipsa qua.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oil-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Oil Facilities Area -->
+
+        <!-- Start About Area -->
+        <div id="about" class="about-area ptb-120 position-relative">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12" data-cues="slideInLeft" data-duration="800">
+                        <div class="about-image position-relative">
+                            <div class="text-end">
+                                <img class="a-image-11 pe-4" src="{% static 'images/about/a-image-12.png' %}" alt="image">
+                            </div>
+                            <h1 class="fw-bold lh-1 mb-0">Industrial</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" data-cues="slideInRight" data-duration="800">
+                        <div class="section-heading ms-auto mb-0" style="max-width: 605px;">
+                            <span class="sub-title">About PowerShpere</span>
+                            <h2>We Provided Best Industry Services For You</h2>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempo <span class="d-block"></span> incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrice risus commodo viverra maecenas accumsan lacus vel facilisis dom.</p>
+
+                            <ul class="check ps-0 pe-0 mb-0 list-unstyled">
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="ti ti-circle-check-filled circle-check"></i>
+                                    Lorem ipsum dolor sit amet into consectetur adipiscing elit
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="ti ti-circle-check-filled circle-check"></i>
+                                    Rmet into consectetur best strategic planning sit
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <i class="ti ti-circle-check-filled circle-check"></i>
+                                    Best odio velit auctor nam elit nulla eget sodales dui pulvinar
+                                </li>
+                            </ul>
+
+                            <div class="about-btn d-flex align-items-center">
+                                <a href="about-us.html" class="default-btn style-four">More About Us</a>
+                                <div class="d-flex align-items-center gap-4">
+                                    <div class="call shrink-0">
+                                        <a href="tel:8123456789006921"><i class="flaticon-phone-call-1"></i></a>
+                                    </div>
+                                    <div class="number">
+                                        <span class="d-block mb-1">Need Any Question</span>
+                                        <a href="tel:8123456789006921" class="fw-semibold">+81-234-567-89006921</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="a-shape-1" src="{% static 'images/shape/a-shape-1.png'%}" alt="image">
+        </div>
+        <!-- End About Area -->
+
+        <!-- Start Our Services Area -->
+        <div class="oil-services-area bg-dark ptb-120 position-relative z-1" style="background-image: url('{% static "images/cover/bg-image-8.jpg" %}');">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title c-y">Services</span>
+                    <h2 class="text-white">We Are Modern Innovative Industrial Company</h2>
+                </div>
+                <div class="services-tab">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">1. Chemical Research</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two-tab-pane" type="button" role="tab" aria-controls="two-tab-pane" aria-selected="false">2. Mechanical Works</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="three-tab" data-bs-toggle="tab" data-bs-target="#three-tab-pane" type="button" role="tab" aria-controls="three-tab-pane" aria-selected="false">3. Fuel Management</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#four-tab-pane" type="button" role="tab" aria-controls="four-tab-pane" aria-selected="false">4. Petroleum & Gas</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6" data-cues="slideInRight" data-duration="800">
+                                    <div class="tab-service-content" style="max-width: 540px;">
+                                        <h3 class="text-white mb-3">Our Automobile Manufactur</h3>
+                                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eimod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan.</p>
+
+                                        <ul class="check-yellow ps-0 pe-0 mb-0 list-unstyled">
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam at ultrices nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Entum estibulum dignissim posuere
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Taking into account the impact to mother earth’s ecology
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                We faced with declining production from its ageing
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6" data-cues="slideInLeft" data-duration="800">
+                                    <div class="tab-service-image position-relative">
+                                        <img src="{% static 'images/service/s-image-4.jpg' %}" alt="image">
+
+                                        <a data-fslightbox="three3" href="https://www.youtube.com/watch?v=66EzPJWBNV8" class="popup-btn">
+                                            <i class="ti ti-player-play-filled play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="tab-service-content" style="max-width: 540px;">
+                                        <h3 class="text-white mb-3">Innovation & Technology</h3>
+                                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eimod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan.</p>
+
+                                        <ul class="check-yellow ps-0 pe-0 mb-0 list-unstyled">
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam at ultrices nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Entum estibulum dignissim posuere
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Taking into account the impact to mother earth’s ecology
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                We faced with declining production from its ageing
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="tab-service-image position-relative">
+                                        <img src="{% static 'images/service/s-image-5.jpg' %}" alt="image">
+                                        
+                                        <a data-fslightbox="three4" href="https://www.youtube.com/watch?v=66EzPJWBNV8" class="popup-btn">
+                                            <i class="ti ti-player-play-filled play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="three-tab-pane" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="tab-service-content" style="max-width: 540px;">
+                                        <h3 class="text-white mb-3">Manufacturing Process</h3>
+                                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eimod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan.</p>
+
+                                        <ul class="check-yellow ps-0 pe-0 mb-0 list-unstyled">
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam at ultrices nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Entum estibulum dignissim posuere
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Taking into account the impact to mother earth’s ecology
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                We faced with declining production from its ageing
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="tab-service-image position-relative">
+                                        <img src="{% static 'images/service/s-image-4.jpg' %}" alt="image">
+
+                                        <a data-fslightbox="three5" href="https://www.youtube.com/watch?v=66EzPJWBNV8" class="popup-btn">
+                                            <i class="ti ti-player-play-filled play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="four-tab-pane" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="tab-service-content" style="max-width: 540px;">
+                                        <h3 class="text-white mb-3">Sustainability Commitment</h3>
+                                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eimod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan.</p>
+
+                                        <ul class="check-yellow ps-0 pe-0 mb-0 list-unstyled">
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam at ultrices nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Entum estibulum dignissim posuere
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Dterdum gravida mauris rhon iquam nunc
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                Taking into account the impact to mother earth’s ecology
+                                            </li>
+                                            <li class="d-flex align-items-center gap-3 text-white">
+                                                <img src="{% static 'images/icon/check-yellow.svg' %}" alt="image">
+                                                We faced with declining production from its ageing
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="tab-service-image position-relative">
+                                        <img src="{% static 'images/service/s-image-5.jpg'%}" alt="image">
+                                        
+                                        <a data-fslightbox="three5" href="https://www.youtube.com/watch?v=66EzPJWBNV8" class="popup-btn">
+                                            <i class="ti ti-player-play-filled play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Our Services Area -->
+
+        <!-- Start Why Choose Us Area -->
+        <div class="works-area choose-us ptb-120 position-relative overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6" data-cues="slideInRight" data-duration="800">
+                        <div class="works-image position-relative">
+                            <div class="text-end">
+                                <img class="a-image-13 br-20" src="{% static 'images/about/a-image-13.png' %}" alt="image">
+                            </div>
+                            <h1 class="fw-bold lh-1 mb-0">Why Torado!</h1>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6" data-cues="slideInLeft" data-duration="800">
+                        <div class="section-heading mb-0 ms-auto" style="max-width: 575px;">
+                            <span class="sub-title">Why Choose Torado</span>
+                            <h2>Our Engineer 30 Years Experience In Industry</h2>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempo <span class="d-block"></span> incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrice risus commodo viverra maecenas accumsan lacus vel facilisis dom.</p>
+
+                            <div class="post d-flex align-items-top gap-4 mb-4">
+                                <div class="shrink-0">
+                                    <span class="number fs-20 c-p bg-f3f3f3 rounded-circle text-center">01</span>
+                                </div>
+                                <div>
+                                    <h4 class="fs-24 lh-1 mb-3">Oil And Lubricant</h4>
+                                    <p>Lorem ipsum dolor amet lorem nibh lectus urna arcu <span class="d-block"></span> lorem erat semper auctor suspendisse quisque molesto magna.</p>
+                                </div>
+                            </div>
+                            <div class="post d-flex align-items-top gap-4">
+                                <div class="shrink-0">
+                                    <span class="number fs-20 c-p bg-f3f3f3 rounded-circle text-center">02</span>
+                                </div>
+                                <div>
+                                    <h4 class="fs-24 lh-1 mb-3">Material Engineering</h4>
+                                    <p>Lorem ipsum dolor amet lorem nibh lectus urna arcu <span class="d-block"></span> lorem erat semper auctor suspendisse quisque molesto magna.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-btn d-flex align-items-center">
+                                <a href="about-us.html" class="default-btn style-four">Explore More</a>
+                                <div class="d-flex align-items-center gap-4">
+                                    <div class="call shrink-0">
+                                        <a href="mailto:hello@torado.com"><i class="flaticon-email-1"></i></a>
+                                    </div>
+                                    <div class="number">
+                                        <span class="d-block mb-1">Mail Us:</span>
+                                        <a href="mailto:hello@torado.com" class="fw-semibold">info@powershereengineering.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="a-shape-2" src="{% static 'images/shape/a-shape-3.png' %}" alt="image">
+        </div>
+        <!-- End Why Choose Us Area -->
+
+        <!-- Start Progects Area -->
+        <div class="project-area oli-projects pt-120 pb-100 position-relative z-1 overflow-hidden">
+            <div class="container-fluid px-5">
+                <div class="section-title">
+                    <span class="sub-title">Our Projects</span>
+                    <h2>Developing Our People For Growing Our Business</h2>
+                </div>
+                <div class="project-warp">
+                    <div class="slide" style="background-image: url('{% static "images/project/p-image-10.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Industrial Welding</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide active" style="background-image: url('{% static "images/project/p-image-11.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Welding Processing</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('{% static "images/project/p-image-12.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Fabrication Welding</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('{% static "images/project/p-image-13.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Welding Metallurgy</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-warp">
+                    <div class="slide" style="background-image: url('{% static "images/project/p-image-14.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Fusion Welding</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('{% static "images/project/p-image-15.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Arc Welding</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide active" style="background-image: url('{% static "images/project/p-image-16.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Precision Welding</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('{% static "images/project/p-image-17.jpg" %}');">
+                        <div class="project-inner bg-white bx d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fs-24 lh-1 mb-3">Laser Welding</h3>
+                                <span>Nauris eu nisi eget nisi imperdiet dolor magna</span>
+                            </div>
+                            <div class="shrink-0">
+                                <a href="project-details.html" class="read-more two">
+                                    <i class="ti ti-arrow-down-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Progects Area -->
+
+        <!-- Start Team Area -->
+        <!--<div class="team-area style-three pb-120">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title">Team Members</span>
+                    <h2>We have A Dedicated And Hardworking Team</h2>
+                </div>
+                <div class="row g-4 justify-content-center" data-cues="slideInUp" data-duration="800">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card position-relative">
+                            <img class="rounded-top-4" src="{% static 'images/team/t-image-1.jpg' %}" alt="image">
+                            <div class="team-card-body bg-white rounded-bottom-4 bx text-center">
+                                <div>
+                                    <h3 class="fs-24 lh-1 mb-2">Melesha Brawon</h3>
+                                    <span>Project Manager</span>
+                                </div>
+                            </div>
+                            <ul class="social ps-0 pe-0 pe-0 mb-0 list-unstyled">
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <i class="flaticon-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="flaticon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="flaticon-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="flaticon-facebook-app-symbol"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card position-relative">
+                            <img class="rounded-top-4" src="{% static 'images/team/t-image-2.jpg' %}" alt="image">
+                            <div class="team-card-body bg-white rounded-bottom-4 bx text-center">
+                                <div>
+                                    <h3 class="fs-24 lh-1 mb-2">Barrow Gertrude</h3>
+                                    <span>Cheif Officer</span>
+                                </div>
+                            </div>
+                            <ul class="social ps-0 pe-0 pe-0 mb-0 list-unstyled">
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <i class="flaticon-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="flaticon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="flaticon-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="flaticon-facebook-app-symbol"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card position-relative">
+                            <img class="rounded-top-4" src="{% static 'images/team/t-image-3.jpg' %}" alt="image">
+                            <div class="team-card-body bg-white rounded-bottom-4 bx text-center">
+                                <div>
+                                    <h3 class="fs-24 lh-1 mb-2">Fredrick Bonita</h3>
+                                    <span>Site Manager</span>
+                                </div>
+                            </div>
+                            <ul class="social ps-0 pe-0 pe-0 mb-0 list-unstyled">
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <i class="flaticon-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="flaticon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="flaticon-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="flaticon-facebook-app-symbol"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- End Team Area -->
+
+        <!-- Start Fun Fact Area -->
+        <div class="fun-fact-area two three position-relative z-1">
+            <div class="container">
+                <div class="row g-4" data-cues="slideInUp" data-duration="800">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="facts-card bg-white bx d-flex align-items-center">
+                            <div class="facts-1shrink-0">
+                                <img src="{% static 'images/icon/facts-1.svg' %}" alt="image icon">
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <h3 class="fs-36 lh-1 mb-2 counter">29</h3>
+                                    <h3 class="fs-36 lh-1 mb-2">+</h3>
+                                </div>
+                                <span>Years Of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="facts-card bg-white bx d-flex align-items-center">
+                            <div class="facts-1shrink-0">
+                                <img src="{% static 'images/icon/facts-2.svg' %}" alt="image icon">
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <h3 class="fs-36 lh-1 mb-2 counter">147</h3>
+                                    <h3 class="fs-36 lh-1 mb-2">K</h3>
+                                </div>
+                                <span>Production Area</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="facts-card bg-white bx d-flex align-items-center">
+                            <div class="facts-1shrink-0">
+                                <img src="images/icon/facts-3.svg" alt="image icon">
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <h3 class="fs-36 lh-1 mb-2 counter">675</h3>
+                                    <h3 class="fs-36 lh-1 mb-2">+</h3>
+                                </div>
+                                <span>Projects Done</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="facts-card bg-white bx d-flex align-items-center">
+                            <div class="facts-1shrink-0">
+                                <img src="{% static 'images/icon/facts-4.svg' %}" alt="image icon">
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <h3 class="fs-36 lh-1 mb-2 counter">318</h3>
+                                    <h3 class="fs-36 lh-1 mb-2">+</h3>
+                                </div>
+                                <span>Qualified Workers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Fun Fact Area -->
+
+        <!-- Start Testimonials Area -->
+        <!--<div class="testimonials-area position-relative z-1 ptb-120" style="background-image: url('{% static "images/cover/bg-image-3.jpg" %}');">
+            <div class="container">
+                <div class="top-bar mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+                            <div class="section-heading mb-0">
+                                <span class="sub-title c-y">Testimonials</span>
+                                <h2 class="text-white mb-0">8k+ Customer Say About Our Great Support</h2>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-3">
+                            <div class="section-btn style-2 position-relative">
+                                <div class="swiper-button-next"><i class="ti ti-arrow-narrow-right"></i></div>
+                                <div class="swiper-button-prev"><i class="ti ti-arrow-narrow-left"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-items position-relative">
+                    <div class="swiper testimonials_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonials-card rounded-3 border border-light">
+                                    <ul class="star ps-0 pe-0 mb-3 list-unstyled">
+                                        <li>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                        </li>
+                                    </ul>
+                                    <p class="text-white mb-4">When while the lovely valley teems with vapour around me and <span class="d-block"></span> sun strikes the upper surface of the impenetrable foliage of my  and but a few stray gleams steal into the inner sanctuary throw myself down among the tall grass by the trickling stream and as I lie close.”</p>
+
+                                    <div class="bottom-bar d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-4">
+                                            <div class="shrink-0">
+                                                <img class="rounded-circle" src="{% static 'images/user/u-image-1.jpg' %}" alt="image">
+                                            </div>
+                                            <div>
+                                                <h3 class="fs-22 lh-1 mb-2 text-white">Spenser Cedrickm</h3>
+                                                <p class="text-white">Industry Specialist</p>
+                                            </div>
+                                        </div>
+                                        <i class="flaticon-straight-quotes cuts"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials-card rounded-3 border border-light">
+                                    <ul class="star ps-0 pe-0 mb-3 list-unstyled">
+                                        <li>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                        </li>
+                                    </ul>
+                                    <p class="text-white mb-4">When while the lovely valley teems with vapour around me and <span class="d-block"></span> sun strikes the upper surface of the impenetrable foliage of my  and but a few stray gleams steal into the inner sanctuary throw myself down among the tall grass by the trickling stream and as I lie close.”</p>
+
+                                    <div class="bottom-bar d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-4">
+                                            <div class="shrink-0">
+                                                <img class="rounded-circle" src="{% static 'images/user/u-image-2.jpg' %}" alt="image">
+                                            </div>
+                                            <div>
+                                                <h3 class="fs-22 lh-1 mb-2 text-white">Hardick Pandey</h3>
+                                                <p class="text-white">Manufacturer</p>
+                                            </div>
+                                        </div>
+                                        <i class="flaticon-straight-quotes cuts"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials-card rounded-3 border border-light">
+                                    <ul class="star ps-0 pe-0 mb-3 list-unstyled">
+                                        <li>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                        </li>
+                                    </ul>
+                                    <p class="text-white mb-4">When while the lovely valley teems with vapour around me and <span class="d-block"></span> sun strikes the upper surface of the impenetrable foliage of my  and but a few stray gleams steal into the inner sanctuary throw myself down among the tall grass by the trickling stream and as I lie close.”</p>
+
+                                    <div class="bottom-bar d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-4">
+                                            <div class="shrink-0">
+                                                <img class="rounded-circle" src="{% static 'images/user/u-image-1.jpg' %}" alt="image">
+                                            </div>
+                                            <div>
+                                                <h3 class="fs-22 lh-1 mb-2 text-white">Tailer Doe</h3>
+                                                <p class="text-white">Site Manager</p>
+                                            </div>
+                                        </div>
+                                        <i class="flaticon-straight-quotes cuts"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials-card rounded-3 border border-light">
+                                    <ul class="star ps-0 pe-0 mb-3 list-unstyled">
+                                        <li>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                            <i class="ti ti-star-filled"></i>
+                                        </li>
+                                    </ul>
+                                    <p class="text-white mb-4">When while the lovely valley teems with vapour around me and <span class="d-block"></span> sun strikes the upper surface of the impenetrable foliage of my  and but a few stray gleams steal into the inner sanctuary throw myself down among the tall grass by the trickling stream and as I lie close.”</p>
+
+                                    <div class="bottom-bar d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-4">
+                                            <div class="shrink-0">
+                                                <img class="rounded-circle" src="{% static 'images/user/u-image-2.jpg' %}" alt="image">
+                                            </div>
+                                            <div>
+                                                <h3 class="fs-22 lh-1 mb-2 text-white">Wilson Smith</h3>
+                                                <p class="text-white">Project Manager</p>
+                                            </div>
+                                        </div>
+                                        <i class="flaticon-straight-quotes cuts"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- End Testimonials Area -->
+
+        <!-- Start Partner Area -->
+        <div class="partner-area ptb-120 bg-f3f3f3">
+            <div class="container">
+                <div class="partner-items position-relative">
+                    <div class="swiper partner_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="p-logo" src="{% static 'images/partner/p-logo-5.png' %}" alt="image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="p-logo" src="{% static 'images/partner/p-logo-6.png' %}" alt="image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="p-logo" src="{% static 'images/partner/p-logo-7.png' %}" alt="image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="p-logo" src="{% static 'images/partner/p-logo-8.png' %}" alt="image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="p-logo" src="{% static 'images/partner/p-logo-9.png' %}" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Partner Area -->
+
+        <!-- Start Blog Area -->
+        <!--<div class="post-area ptb-120">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title">Blog Post</span>
+                    <h2>Articles And News From Our Industry</h2>
+                </div>
+                <div class="row g-4 justify-content-center" data-cues="slideInUp" data-duration="800">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card bg-white bx rounded-3">
+                            <div class="blog-image">
+                                <a href="blog-details.html" class="d-block">
+                                    <img class="rounded-top-3" src="assets/images/blog/b-image-6.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <ul class="list ps-0 pe-0 mb-3 list-unstyled d-flex align-items-center gap-4">
+                                    <li class="d-flex align-items-center gap-2"><i class="flaticon-calendar"></i> Feb 07, 2025</li>
+                                    <li class="d-flex align-items-center gap-2"><i class="flaticon-chat"></i> No Comment</li>
+                                </ul>
+                                <h3 class="fs-24 mb-2">
+                                    <a href="blog-details.html">Future Of Manufacturing...</a>
+                                </h3>
+                                <p class="mb-4">Donec scelerisque dolor nunc dictum interdum Aliquam at ultrices nunc in sem leo.</p>
+                                <a href="blog-details.html" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card bg-white bx rounded-3">
+                            <div class="blog-image">
+                                <a href="blog-details.html" class="d-block">
+                                    <img class="rounded-top-3" src="assets/images/blog/b-image-7.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <ul class="list ps-0 pe-0 mb-3 list-unstyled d-flex align-items-center gap-4">
+                                    <li class="d-flex align-items-center gap-2"><i class="flaticon-calendar"></i> Feb 08, 2025</li>
+                                    <li class="d-flex align-items-center gap-2"><i class="flaticon-chat"></i> No Comment</li>
+                                </ul>
+                                <h3 class="fs-24 mb-2">
+                                    <a href="blog-details.html">Smart Factory Solutions...</a>
+                                </h3>
+                                <p class="mb-4">Donec scelerisque dolor nunc dictum interdum Aliquam at ultrices nunc in sem leo.</p>
+                                <a href="blog-details.html" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card bg-white bx rounded-3">
+                            <div class="blog-image">
+                                <a href="blog-details.html" class="d-block">
+                                    <img class="rounded-top-3" src="assets/images/blog/b-image-8.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <ul class="list ps-0 pe-0 mb-3 list-unstyled d-flex align-items-center gap-4">
+                                    <li class="d-flex align-items-center gap-2"><i class="flaticon-calendar"></i> Feb 09, 2025</li>
+                                    <li class="d-flex align-items-center gap-2"><i class="flaticon-chat"></i> No Comment</li>
+                                </ul>
+                                <h3 class="fs-24 mb-2">
+                                    <a href="blog-details.html">Process In Coal Mining...</a>
+                                </h3>
+                                <p class="mb-4">Donec scelerisque dolor nunc dictum interdum Aliquam at ultrices nunc in sem leo.</p>
+                                <a href="blog-details.html" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- End Blog Area -->
+
+        <!-- Start Newsletter Area -->
+        <div class="newsletter-bg-warp bg-111 position-relative z-1">
+            <!--<div class="contact-area">
+                <div class="container">
+                    <div class="quote-warp bg-white br-20">
+                        <div class="section-title">
+                            <h3 class="fs-24 mb-3">Feel Free To Get In Touch!</h3>
+                            <p>Enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        </div>
+                        <form class="quote-form">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <button type="submit" class="default-btn w-100">Submit Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>-->
-          </div>
+
+            <div class="footer-area pt-100">
+                <div class="container">
+                    <div class="row" data-cues="slideInUp" data-duration="800">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="footer-weight">
+                                <a href="index.html" class="f-logo d-block">
+                                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                                </a>
+                                <p class="text-white mb-4">Lorem ipsum dolor sit amconsec adipiscing elit eiusmod tempor incididunt labore dolore magna aliqua con tetur.</p>
+                                <ul class="social ps-0 pe-0 mb-0 list-unstyled opacity-100 visible d-flex align-items-center gap-2">
+                                    <li>
+                                        <span class="text-white">Follow Us:</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="flaticon-facebook-app-symbol"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com/" target="_blank">
+                                            <i class="flaticon-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="flaticon-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/" target="_blank">
+                                            <i class="flaticon-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="footer-weight ps-2">
+                                <h3 class="fs-24 lh-1 text-white">Our Services</h3>
+
+                                <ul class="causes ps-0 pe-0 mb-0 list-unstyled">
+                                    <li><i class="ti ti-chevron-right"></i> <a href="services.html">Oil & Gas Engineering</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="services.html">Chemical Research</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="services.html">Industrial Equipment</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="services.html">Building & Construction</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="services.html">Energy Production</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="footer-weight ps-2">
+                                <h3 class="fs-24 lh-1 text-white">Quick Links</h3>
+
+                                <ul class="causes ps-0 pe-0 mb-0 list-unstyled">
+                                    <li><i class="ti ti-chevron-right"></i> <a href="products.html">Products</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="product-details.html">Product Details</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="projects.html">Projects</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="project-details.html">Project Details</a></li>
+                                    <li><i class="ti ti-chevron-right"></i> <a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="footer-weight ps-1">
+                                <h3 class="fs-24 lh-1 text-white">Get In Touch</h3>
+
+                                <ul class="location ps-0 pe-0 mb-0 list-unstyled">
+                                    <li class="d-flex align-items-top gap-3">
+                                        <div class="shrink-0">
+                                            <img src="{% static 'images/icon/map.svg' %}" alt="image">
+                                        </div>
+                                        <div>
+                                            <span class="fw-bold text-white d-block mb-1">Location:</span>
+                                            <a href="https://www.google.com/maps/search/3016+sunrise+road+las+vegas/@36.1251645,-115.3398071,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">3016 sunrise road las vegas</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-top gap-3">
+                                        <div class="shrink-0">
+                                            <img src="{% static 'images/icon/mail.svg' %}" alt="image">
+                                        </div>
+                                        <div>
+                                            <span class="fw-bold text-white d-block mb-1">Email:</span>
+                                            <a href="mailto:hello@torado.com">hello@torado.com</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-top gap-3">
+                                        <div class="shrink-0">
+                                            <img src="{% static 'images/icon/phone.svg' %}" alt="image">
+                                        </div>
+                                        <div>
+                                            <span class="fw-bold text-white d-block mb-1">Phone:</span>
+                                            <a href="tel:30098765432150">(+30) 098765432150</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-area b-top">
+                <div class="container">
+                    <p class="text-white text-center"><span class="fw-semibold c-y">PowerShpere</span> All Right Reserved Design By: <a href="#" target="_blank" class="fw-semibold c-y">Tanlytic</a></p>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- End Newsletter Area -->
 
-      <div class="col-lg-6">
-        <h1>Why PowerSphere</h3>
-        <h3 class="display-6">Reliable lifting solutions for heavy-duty tasks</h1>
-        <p class="lead text-muted">Inspired by the look & feel of jacking-solutions.com, this template uses Bootstrap and lightweight 3D parallax on the hero card — easy to reuse and customise.</p>
-
-        <div class="row g-3 features">
-          <div class="col-md-6">
-            <div class="feature">
-              <h5>Robust Hardware</h5>
-              <p class="small text-muted mb-0">Built for heavy loads and long life.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature">
-              <h5>Smart Monitoring</h5>
-              <p class="small text-muted mb-0">Real-time metrics, alerts and analytics.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature">
-              <h5>Easy Integration</h5>
-              <p class="small text-muted mb-0">Works with existing control systems.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature">
-              <h5>Support & Service</h5>
-              <p class="small text-muted mb-0">Local engineers and rapid response.</p>
-            </div>
-          </div>
+        <!-- Go top Btn -->
+        <div class="go-top">
+            <i class="ti ti-arrow-big-up-lines-filled"></i>
         </div>
+        <!-- Go top Btn End -->
 
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="bg-white border-top">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div class="py-3">© <strong>PowerSphere</strong> — The Future of Power</div>
-    <!--<div class="py-3 text-muted small">Built with Bootstrap • 3D hero effect</div>-->
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts.js"></script>
-</body>
+        <!-- JS Files -->
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+        <script src="{% static 'js/fslightbox.min.js' %}"></script>
+        <script src="{% static 'js/scrollCue.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+    </body>
 </html>
