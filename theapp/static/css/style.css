@@ -777,7 +777,8 @@ Navbar Area CSS
   width: 30px;
   margin: 5px 0;
   display: block;
-  background-color: var(--title-color);
+  background-color: var(--primary);
+  color: var(--primary);
 }
 .navbar .others-options {
   padding-left: 0px !important;
@@ -909,7 +910,7 @@ Responsive Navbar Area CSS
   font-size: 16px;
   font-weight: 600;
 }
-.mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list a:after {
+/*.mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list a:after {
   top: 15%;
   right: 0;
   content: "\f125";
@@ -919,12 +920,12 @@ Responsive Navbar Area CSS
   font-size: 16px;
   font-style: normal;
   font-family: flaticon_my-icons !important;
-}
+}*/
 .mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list a:hover, .mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list a.active {
-  color: var(--primary);
+  color: var(--secondary);
 }
 .mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list a:hover::after, .mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list a.active::after {
-  color: var(--primary);
+  color: var(--secondary);
 }
 .mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list .mobile-menu-items {
   height: 0;
@@ -945,7 +946,7 @@ Responsive Navbar Area CSS
   color: var(--primary);
 }
 .mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list .mobile-menu-items a:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 .mobile-navbar .offcanvas-body ul.mobile-menu .mobile-menu-list .mobile-menu-items a::after {
   display: none;
@@ -2081,7 +2082,7 @@ Oil Services Area CSS h-3
   margin-bottom: 50px;
 }
 .services-tab .nav-tabs .nav-item {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .services-tab .nav-tabs .nav-item .nav-link {
   border: none;

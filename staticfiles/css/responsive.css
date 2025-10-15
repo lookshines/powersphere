@@ -95,7 +95,7 @@
   }
   /* Navbar Area CSS */
   .navbar .navbar-toggler .burger-menu span {
-    background-color: var(--white);
+    background-color: #05428d;
   }
   .navbar.style-three {
     margin-bottom: 0;
@@ -997,7 +997,7 @@
     right: 0;
   }
   .navbar .navbar-toggler .burger-menu span {
-    background-color: var(--white);
+    background-color: var(--primary);
   }
   .navbar .others-options {
     margin-right: 40px;
